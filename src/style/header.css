@@ -1,0 +1,26 @@
+.navbar-brand {
+    font-family: 'Lilita One';
+    font-size: calc(50px + 2vmin);
+    color:#D79922;
+}
+
+.nav-link {
+    font-family: 'Lilita One';
+    font-size: calc(15px + 2vmin);
+    color: #D79922;
+    margin-left: 10px;
+}
+
+.navbar-brand:hover {
+    font-family: 'Lilita One';
+    color:#D79922;
+}
+
+.nav-link:hover {
+    font-family: 'Lilita One';
+    color: #D79922;
+}
+
+.navigation {
+    background-color: #4056A1;
+}

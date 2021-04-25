@@ -1,0 +1,22 @@
+.purposePage {
+    background-color: #F1F0EB;
+    width: 100vw;
+}
+
+.explain {
+    font-family: 'Lilita One';
+    font-size: calc(15px + 2vmin);
+    color: #D79922;
+    margin-left: 10px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.r1 {
+    font-family: 'Lilita One';
+    font-size: calc(10px + 2vmin);
+    color: #D79922;
+    margin-left: 10px;
+    padding-top: 3%;
+    text-align:center;
+}

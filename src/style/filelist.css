@@ -1,0 +1,32 @@
+.select-files-container {
+  margin-bottom: 40px;
+}
+
+.Trow { 
+  border-bottom: 1px solid #D79922;
+  text-align: left;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  background-color: #C5CCE3;
+}
+
+.content {
+  padding: 10px;
+}
+
+.clear-button {
+  background-color: #4056A1;
+  color: #FDFEFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.clear-button:hover {
+  color: #FDFEFF;
+  background-color: #2c469c;
+  font-weight: bold;
+  text-decoration: none;
+}
