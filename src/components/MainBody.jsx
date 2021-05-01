@@ -99,7 +99,7 @@ class MainBody extends React.Component {
             this.setState({imageBytes: res.data, alert: false});
         }).catch(function (error) {
             console.log(error);
-            self.setState({alert: true, type: "danger", message: "An error occurred. Please try again. There is a picture upload limit of 20MB. Please contact Thomas Hoversen if the problem continues with fewer images."});
+            self.setState({alert: true, type: "danger", message: "An error occurred. Please try again. There is a picture upload limit of 5MB. Mobile devices may not work at all. Please see Website Specs for details."});
         });
         }
     }
@@ -147,6 +147,7 @@ class MainBody extends React.Component {
                 <Container fluid>
                     <Row>
                         <Col md={{span:10, offset:1}} xs={12} >
+                            <div style={{fontWight:"bold", paddingTop:"3%"}}>Note: This tool is only a proof of concept and should be used on desktop computers. Mobile devices may be unable to view/download images and are usually constrained to submit less images, often 1 small image max. See website specs for more info and thank you for your understanding.</div>
                             <Image src={imageS} fluid className="display-container" style={{maxWidth:"100%", height:"auto"}} />
                             {/* {this.state.theme == undefined || this.state.prevT == "random" && this.state.theme == "random" ?
                             <div>Theme: {this.state.theme}, Randomness: {this.state.rLevel}</div> 
@@ -178,6 +179,7 @@ class MainBody extends React.Component {
                     </Col>
                     <Col md={{span:3, offset:2}} sm={{span:3, offset:3}} xs={{span:10, offset:1}} >
                     <Row>
+                        <div style={{fontWeight:"bold",marginBottom:"3%"}}>Select different themes and random levels before submitting for previews.</div>
                     <div for="exampleSelect" style={{fontWeight:"bold"}}>Width</div>
                         <Input type="select" name="select" id="exampleSelect" onChange={this.setWidth} style={{marginBottom:"3%"}}>
                             <option>1</option>

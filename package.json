@@ -1,10 +1,13 @@
 {
-  "name": "funbanners-client",
+  "name": "fun-banners-ui",
   "version": "0.1.0",
+  "homepage": "http://thomas-hoversen.github.io/funbanners-client",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "react": "^17.0.1",
@@ -20,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
