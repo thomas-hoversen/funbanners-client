@@ -7,10 +7,11 @@
 }
 
 .define-random {
-    font-family: 'Lilita One';
+    /* font-family: 'Lilita One'; */
     font-size: calc(8px + 2vmin);
-    color: #D79922;
+    font-weight:bold;
+    /* color: #D79922; */
+    color: black;
     margin-left: 10px;
-    padding-top: 5%;
-    text-align: center;
+    text-align: left;
 }

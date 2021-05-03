@@ -147,7 +147,7 @@ class MainBody extends React.Component {
                 <Container fluid>
                     <Row>
                         <Col md={{span:10, offset:1}} xs={12} >
-                            <div style={{fontWight:"bold", paddingTop:"3%"}}>Note: This tool is only a proof of concept and should be used on desktop computers. Mobile devices may be unable to view/download images and are usually constrained to submit less images, often 1 small image max. See website specs for more info and thank you for your understanding.</div>
+                            <div style={{fontWeight:"bold", paddingTop:"3%"}}>Note: This tool is a proof of concept and should only be used on desktop computers. Mobile devices may not work. See website specs for more info.</div>
                             <Image src={imageS} fluid className="display-container" style={{maxWidth:"100%", height:"auto"}} />
                             {/* {this.state.theme == undefined || this.state.prevT == "random" && this.state.theme == "random" ?
                             <div>Theme: {this.state.theme}, Randomness: {this.state.rLevel}</div> 
@@ -164,7 +164,7 @@ class MainBody extends React.Component {
                          <div className="disabled-download">Download</div>
                         : <a href={'data:application/octet-stream;base64,' + this.state.imageBytes} download="amazing-fun-banners-image.png" className="download-button" >Download</a>
                         }
-                        <div style={{fontWeight:"bold", marginTop:"3%"}}>Downloaded image may be higher quality.</div>
+                        {/* <div style={{fontWeight:"bold", marginTop:"3%"}}>Downloaded image may be higher quality.</div> */}
                         </Col>
                     </Row>
                     <HR ></HR>
@@ -179,7 +179,7 @@ class MainBody extends React.Component {
                     </Col>
                     <Col md={{span:3, offset:2}} sm={{span:3, offset:3}} xs={{span:10, offset:1}} >
                     <Row>
-                        <div style={{fontWeight:"bold",marginBottom:"3%"}}>Select different themes and random levels before submitting for previews.</div>
+                        <div style={{fontWeight:"bold",marginBottom:"3%"}}>Before submitting, select different themes and random levels to preview above.</div>
                     <div for="exampleSelect" style={{fontWeight:"bold"}}>Width</div>
                         <Input type="select" name="select" id="exampleSelect" onChange={this.setWidth} style={{marginBottom:"3%"}}>
                             <option>1</option>
