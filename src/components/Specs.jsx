@@ -50,7 +50,7 @@ class Specs extends React.Component {
                     </div><br></br>
                     <p>The uploaded images are copied to fill the grid size. These copies, let’s say 48 for a 12*4 grid, are held in working memory as Java BufferedImages. This uses a ton of heap space, which wasn't an issue during local development but often needs more working memory than Heroku pods allow on their free tier. This issue severely constrains the upload size and almost prevented me from publishing the site.</p> 
                     <p>
-                        Because this project is for fun, works moderately well on desktops and likely won't be used much, I'm comfortable putting my name on it. For desktop users, this app will currently accept up to 5MB of pictures.
+                        Because this project is for fun, works moderately well on desktops and likely won't be used much, I'm comfortable putting it up. For desktop users, this app will currently accept up to 2MB of pictures.
                     </p>
                     <p> One possible solution would be to temporarily save the images to the disk and call them only when needed, which uses much less memory than keeping them in working memory as BufferedImages.
                         </p>

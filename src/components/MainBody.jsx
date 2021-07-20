@@ -99,7 +99,7 @@ class MainBody extends React.Component {
             this.setState({imageBytes: res.data, alert: false});
         }).catch(function (error) {
             console.log(error);
-            self.setState({alert: true, type: "danger", message: "An error occurred. Please try again. There is a picture upload limit of 5MB. Mobile devices may not work at all. Please see Website Specs for details."});
+            self.setState({alert: true, type: "danger", message: "An error occurred. Please try again. There is a picture upload limit of 2MB. Mobile devices may not work at all. Please see Website Specs for details."});
         });
         }
     }
