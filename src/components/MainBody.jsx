@@ -91,7 +91,7 @@ class MainBody extends React.Component {
             if (!this.state.imageBytes && !this.state.alert) {
                 this.setState({alert: true, type: "primary", message: "Our servers may be starting. This takes up to 30 seconds. Subsequent requests should be much shorter."});
             }
-        }, 5000);
+        }, 3000);
 
         let self = this;
         http.post('/upload', formData)
